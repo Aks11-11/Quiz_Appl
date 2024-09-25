@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Dashboard</title>
+    <title>@Page.Title</title>
+
+</head>
+<body>
+    <div class="list-group-item">
+
+
+        <div class="list-group-item">
+            @Html.ActionLink("Add_Category", "Add_Category", new { @class = "List-group-item" })
+        </div>
+        <div class="list-group-item">
+            @Html.ActionLink("AddQuestions", "AddQuestions", new { @class = "List-group-item" })
+        </div>
+        <div class="list-group-item">
+            @Html.ActionLink("Reports", "Dashboard", new { @class = "List-group-item" })
+        </div>
+
+        <div class="list-group-item">
+            @Html.ActionLink("LogOut", "LogOut", new { @class = "List-group-item" })
+        </div>
+
+        @*<div class=" col-lg-2-md-2 col-sm-2 col-xs-2" style="height:900px;border:1px solid gray;background-color:dimgray">
+        <div class="list=group">
+            <a href="#" class="list-group-item">Report</a>
+            <a href="@Html.Action("Add_Category") class="list-group-item">Add a New Category</a>
+            <a href="@Html.Action("AddQuestions")" class="list-group-item">Add Questions</a>*@
+    </div>
+
+        <div class=" col-lg-10-md-10 col-sm-10 col-xs-10" style="height:900px;border:1px solid gray">
+
+        @RenderBody()
+            
+    <div>
+
+            </div>
+
+</body>
+</html>
